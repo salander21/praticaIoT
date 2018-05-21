@@ -251,7 +251,15 @@ void callback(char* topic, byte* payload, unsigned int length) {
         delay(1000);
 
        }
+        if (msg.equals("LO5"))
+    {
+        digitalWrite(D0,HIGH);
+        digitalWrite(D1,HIGH);
+        digitalWrite(D2,HIGH);
+        digitalWrite(D3,HIGH);
+        digitalWrite(D4,HIGH);
      }
+    }
    
  
   Serial.println();
